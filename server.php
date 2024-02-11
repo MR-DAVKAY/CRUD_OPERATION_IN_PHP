@@ -4,15 +4,14 @@ define("USERNAME","velelaze");
 define("PASSWORD","@davkay65");
 define("DATABASE","velelaze");
 
-$connection = mysqli_connect(HOSTNAME,USERNAME,PASSWORD,DATABASE);
+$conn = mysqli_connect(HOSTNAME,USERNAME,PASSWORD,DATABASE);
 
-if($connection)
+if($conn)
 {
-    echo "Connected";
+       echo "";
 }
-else
-{
-    echo "Failed!!!";
+else {
+ echo "error";
+              
 }
-
 ?>
